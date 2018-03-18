@@ -1,0 +1,13 @@
+{
+  "name": "wqjs",
+  "version": "0.0.2",
+  "description": "javascript libs weiqi weizongqi",
+  "main": "index.js",
+  "repository": "git@github.com:weizongqi1990/wqjs.git",
+  "author": "weizongqi",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "lib/"
+  ]
+}
