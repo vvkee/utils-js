@@ -11,6 +11,12 @@ interface StringKeyObject {
  * @param a object
  */
 export const objectDeepCopy = (a: StringKeyObject): StringKeyObject => {
+  if (typeof a !== 'object' || a === null) {
+    return a;
+  }
+  if (Array.isArray(a)) {
+    return arrayDeepCopy(a);
+  }
   const target: {
     [key: string]: any
   } = {};
@@ -21,8 +27,11 @@ export const objectDeepCopy = (a: StringKeyObject): StringKeyObject => {
   return target;
 }
 
-export const arrayDeepCopy = (arrays: any[]): any[] => {
+export const arrayDeepCopy = (arrays: any): any => {
   const target: any[] = [];
+  if (!Array.isArray(arrays)) {
+    return arrays;
+  }
   arrays.forEach((arr) => {
     target.push(deepCopy(arr));
   })
@@ -35,10 +44,7 @@ export const arrayDeepCopy = (arrays: any[]): any[] => {
  * @param a
  */
 const deepCopy = (a: any): any => {
-  if (typeof a !== 'object') {
-    return a;
-  }
-  if (a === null) {
+  if (typeof a !== 'object' || a === null) {
     return a;
   }
   if (Array.isArray(a)) {
