@@ -1,10 +1,10 @@
 {
-  "name": "wqjs",
-  "version": "0.0.2",
-  "description": "javascript libs weiqi weizongqi",
+  "name": "@vvkee/utils",
+  "version": "0.0.3",
+  "description": "javascript libs weiqi weizongqi vvkee",
   "main": "index.js",
-  "repository": "git@github.com:weizongqi1990/wqjs.git",
-  "author": "weizongqi",
+  "repository": "git@github.com:vvkee/utils-js.git",
+  "author": "vvkee",
   "license": "MIT",
   "files": [
     "index.js",
