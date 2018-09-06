@@ -1,13 +1,33 @@
 {
-  "name": "@vvkee/utils",
-  "version": "0.0.3",
-  "description": "javascript libs weiqi weizongqi vvkee",
+  "name": "@vvkee/utils-js",
+  "version": "0.0.1",
+  "description": "javascript utils libs weiqi weizongqi vvkee",
   "main": "index.js",
-  "repository": "git@github.com:vvkee/utils-js.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vvkee/utils-js.git"
+  },
   "author": "vvkee",
   "license": "MIT",
   "files": [
     "index.js",
     "lib/"
+  ],
+  "bugs": {
+    "url": "https://github.com/vvkee/utils-js/issues"
+  },
+  "homepage": "https://github.com/vvkee/utils-js#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "utils",
+    "vvkee",
+    "weizongqi",
+    "weiqi"
   ]
 }
